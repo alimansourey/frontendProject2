@@ -47,6 +47,7 @@ function random255(){
      for(let i=0 ; i< mainDivsArray.length ; i++) {
        mainDivsArray[i].addEventListener('mouseover',()=>{
          mainDivsArray[i].style.transform = `scale(1.01)`;
+         mainDivsArray[i].style.border = `2px solid black`;
          
        })
      }
@@ -63,6 +64,7 @@ function random255(){
      for(let i=0 ; i< mainDivsArray.length ; i++) {
        mainDivsArray[i].addEventListener('mouseout',()=>{
          mainDivsArray[i].style.transform = `scale(1)`;
+         
        })
      }
    }
