@@ -46,14 +46,14 @@
   /*........2 divs :*/
   
   main :first-child {
-    background : green;
+    background : linear-gradient(45deg, rgba(255,255,255,0.6),rgba(255,255,255,1));
     height : 20% ;
     flex-basis : 100% ;
     
     }
   .contentDiv {
     height : 50% ;
-    background : red;
+    background : linear-gradient(to right bottom, rgba(0,200,255,0.6),rgba(0,200,255,1));
     margin : 5px ;
     flex-grow : 1;
     border-radius : 10px;
