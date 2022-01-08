@@ -1,0 +1,83 @@
+/* ...........general rules */
+* {
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing : border-box ;
+  }
+  
+  /* ........... header */
+  ul {
+    list-style-type : none ;
+     /* alignment */
+    display : flex ;
+    }
+  li {
+    /* alignment : takes equal width */
+    width : 100% ;
+    /* alignment : separate li from each others  */
+    margin :5px  ;
+    margin-bottom : 5px;
+    /* stylign */
+    background : grey ;
+    border : 3px inset grey ;
+    text-align : center;
+    color : white;
+    cursor : pointer;
+    font-size : 1.5em;
+    border-radius : 10px 0 0 0;
+  }
+  
+  /*............main */
+  main {
+    height : 100vh ;
+    background : blue;
+    border : 3px solid black ;
+    border-top : none;
+    /* align 2 divs inside main */
+    display : flex ;
+    justify-content : center;
+    align-items : center;
+    flex-grow : 1 ;
+    flex-wrap : wrap;
+    align-content : flex-start;
+    }
+  
+  
+  /*........2 divs :*/
+  
+  main :first-child {
+    background : green;
+    height : 20% ;
+    flex-basis : 100% ;
+    
+    }
+  .contentDiv {
+    height : 50% ;
+    background : red;
+    margin : 5px ;
+    flex-grow : 1;
+    border-radius : 10px;
+    }
+  
+  
+  /*............ mobile layout : */
+  @media screen and (max-width: 500px) {
+    body {
+      height : 100vh ;
+    }
+   
+    ul{
+      height : 100% ;
+      display : block;
+    }
+    li {
+      display : block ;
+      width : 90% ;
+      margin : 5px auto ;
+      height : 10% ;
+      display : flex ;
+      align-items : center;
+      justify-content : center;
+      font-size : 1.5em;
+    }
+  }
